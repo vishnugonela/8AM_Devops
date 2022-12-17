@@ -1,0 +1,14 @@
+#!/bin/bash
+#i am writing names here of our squad
+
+name1=$raj
+name2=$yash
+name3=mtm
+name4=rahul
+name5=irfan
+name6=suraj
+
+
+echo "$name1 $name2 $name3 $name4 $name5 $name6"
+
+
