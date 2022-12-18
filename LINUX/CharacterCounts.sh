@@ -4,7 +4,6 @@
 # --------------------------------------------------------
 
 
-# string=$(echo $1 | tr '[:upper:]' '[:lower:]')
 string=$1
 read -p "Enter a String:" string
 
