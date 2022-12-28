@@ -16,5 +16,5 @@ cat $FILE
 
 else
 echo "The path doesnt exist"
-echo "The current directory is `cd/`"
+echo "The current directory is `cd /` "
      fi
