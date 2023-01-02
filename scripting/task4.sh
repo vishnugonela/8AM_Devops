@@ -8,5 +8,5 @@ find /home -mtime -10 -ls # find all files
 find /home -iname "*.txt" -mtime -10 -ls # finds files with .txt extension
 #  c. Delete files last 10days"
 find /home/mounica/directory -mtime -10 -ls | grep ".txt *" | rm -rf .txt *
-  or
-  ls -ltr | tail -10 | grep ".java" | rm -rf .java * 
+                                 #or
+ls -ltr | tail -10 | grep ".java" | rm -rf .java * 
