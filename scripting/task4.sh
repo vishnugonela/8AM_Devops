@@ -1,7 +1,7 @@
 #4. Write a shell script to find all files ends with ".java" in a directory(s)
 #  a. run a loop with count of files found
 ls –la | grep .java
- 
+
 # b. if files found filter only last 10 days
 #ANS:find directoryname -iname (file name or * to find all files ) -mtime (time in days) 
 find /home -mtime -10 -ls # find all files
