@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 read -p "Enter the file name:" file
 if find / -type f -name $file | grep "$file"
 then
@@ -7,4 +8,4 @@ then
 	echo "count the lines:" more $file | wc
 else
 	echo "file not found"
-fi
+

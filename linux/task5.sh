@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 read -p "Enter the Package Name:" Package
 
 if rpm -q $Package >/dev/null
@@ -9,3 +10,4 @@ else
 	echo "Installing the Package"
 	yum install $Package
 fi
+
