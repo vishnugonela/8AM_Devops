@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!bin/bash
 read -p "Enter the file name:" file
 read -p "Enter the path :" path
