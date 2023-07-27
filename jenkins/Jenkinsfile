@@ -11,5 +11,10 @@ pipeline{
         sh 'echo "Deploy completed"'
       }
     }
+    stage('run'){
+      steps{
+        sh '  bash -x ${WORKSPACE} linux/script.sh'
+      }
+    }
   }
 }
