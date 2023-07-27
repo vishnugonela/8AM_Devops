@@ -13,7 +13,7 @@ pipeline{
     }
     stage('run'){
       steps{
-        sh '  bash -x ${WORKSPACE} linux/script.sh'
+        sh '  bash -x ${WORKSPACE}/linux/script.sh'
       }
     }
   }
