@@ -3,12 +3,12 @@ agent any
 stages{
 stage('build'){
 steps{
-sh 'echo"build is sucess"'
+sh 'echo "build is sucess" '
 }
 }
 stage('deploy'){
 steps{
-sh 'echo " deploy is sucess "'
+sh 'echo "deploy is sucess " '
 }
 }
 }
