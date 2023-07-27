@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Replace the following line with your actual build commands
+                echo "Building the project..."
+            }
+        }
+        stage('Test') {
+            steps {
+                // Replace the following line with your actual test commands
+                echo "Running tests..."
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Replace the following line with your actual deployment commands
+                echo "Deploying the project..."
+            }
+        }
+    }
+}
