@@ -1,0 +1,12 @@
+pipeline{
+	agent any
+	stages{
+		stage('stage1'){
+			steps{
+				sh 'def username=$1
+				read username
+				echo "Hello ${username}"
+			}
+		}
+	}
+}
