@@ -1,0 +1,22 @@
+Task of Today on 20/06/2023
+1)	What is the command to find only files in directories.
+Ans:- find . –name
+
+2)	What is the command to find only directories.
+         Ans:- find . -type d 
+
+3)	What is the command to find files which is older then 10 days.
+Ans:- find /path/to/search -type f -mtime +10 –print
+
+4)	What is the command to find file which is more then 10MB.
+Ans:- find / -type f -size +10M -name "filename" –print
+
+5)	What is the command to find .java files.
+Ans:- find /path/to/directory -type f -name "*.java"
+
+6)	What is the command to find only hidden files.
+Ans:- find . -name ".*"
+
+7)	What is the command to find all files under /var directory which ends with .log 
+Ans:- find /var -type f -name "*.log"
+
