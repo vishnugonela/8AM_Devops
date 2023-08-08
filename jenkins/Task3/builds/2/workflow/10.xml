@@ -1,0 +1,39 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@848.v5a_383b_d14921">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@3731.ve4b_5b_857b_a_d3">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <startId>4</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@1251.vd4889a_b_0a_065"/>
+    <wf.a.TimingAction plugin="workflow-api@1251.vd4889a_b_0a_065">
+      <startTime>1691039230852</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@1251.vd4889a_b_0a_065">
+      <error class="hudson.AbortException">
+        <detailMessage>script returned exit code 1</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.handleExit(DurableTaskStep.java:668)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:614)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:555)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:833)</trace>
+        </stackTrace>
+        <suppressedExceptions>
+          <wf.a.ErrorAction_-ErrorId>
+            <stackTrace/>
+            <suppressedExceptions class="empty-list"/>
+            <uuid>6edfe458-e51b-4959-a06d-199d5712207d</uuid>
+          </wf.a.ErrorAction_-ErrorId>
+        </suppressedExceptions>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@848.v5a_383b_d14921">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@3731.ve4b_5b_857b_a_d3">
+    <parentIds>
+      <string>11</string>
+    </parentIds>
+    <id>12</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3731.ve4b_5b_857b_a_d3">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+                    echo &quot; &apos;$password&apos; | grep -e [0-9A-Za-z]&quot;
+                    set -x
+                    if [ $? == 0 ]
+                    then 
+                        echo &quot;Valid Pasword&quot;
+                    else 
+                        echo &quot;INVALID PASSWORD&quot;
+                    fi 
+                    </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1251.vd4889a_b_0a_065">
+      <startTime>1691063653687</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>
