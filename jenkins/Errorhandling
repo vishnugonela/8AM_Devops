@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages{
+        stage ('stage 1'){
+            steps{
+                script{
+                    try {
+                    sh 'echo " Hello Docker "'
+                    sh ' eho "hello" '
+                    }catch(Exception e){
+                        echo "Error occured"
+                    }
+                }
+            }
+        }
+        stage ('stage 2'){
+            steps{
+                
+                sh ' echo "execute stage 2"'
+            }
+        }
+    }
+}
