@@ -1,0 +1,113 @@
+Started by user [8mha:////4O1BGNI2tArSFayhS6MeHNroRxeh+Wg7LKFW9BWXn9Q5AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZe/dLi1CL99PzSkozEXACz/c/SwgAAAA==[0mgoutham bh
+[8mha:////4OSyUrFoRBy8Al7Ay02Tr0s6GZVHRh5KkyD4g9G0z37nAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Eue15cAE7G09yV/K6FlLs3qR9Vr4sU/TmPd/MFaiiXwAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4GwaL4eN3FxIrRnXhwaaKn+Ka7s6yxm4XIKDDyU/0DCSAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/lib/jenkins/workspace/jenkintask1
+[8mha:////4JYbb/8rh/L3ehFD8EntYm7gwJQFPG507c3qrUWaI+ujAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4KmKJqlUMPzHj/HKUcWbtM0p/FCIu/8O4192y1S0PJDpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4IPzId2rbPaj2equ8HVh/am2zl3fFT7HQXbuwOSFWx7qAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Server Details)
+[8mha:////4P7fhnMu93hvIbOIXlC3uIsAoZWKeCJJogzRGOy1FjA3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] sh
+++ lscpu
++ echo 'Server Details:Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   45 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          1
+On-line CPU(s) list:             0
+Vendor ID:                       AuthenticAMD
+Model name:                      AMD Ryzen 5 4600H with Radeon Graphics
+CPU family:                      23
+Model:                           96
+Thread(s) per core:              1
+Core(s) per socket:              1
+Socket(s):                       1
+Stepping:                        1
+BogoMIPS:                        5988.74
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibrs ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero wbnoinvd arat umip rdpid overflow_recov succor
+Hypervisor vendor:               VMware
+Virtualization type:             full
+L1d cache:                       32 KiB (1 instance)
+L1i cache:                       32 KiB (1 instance)
+L2 cache:                        512 KiB (1 instance)
+L3 cache:                        4 MiB (1 instance)
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT disabled
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected'
+Server Details:Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   45 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          1
+On-line CPU(s) list:             0
+Vendor ID:                       AuthenticAMD
+Model name:                      AMD Ryzen 5 4600H with Radeon Graphics
+CPU family:                      23
+Model:                           96
+Thread(s) per core:              1
+Core(s) per socket:              1
+Socket(s):                       1
+Stepping:                        1
+BogoMIPS:                        5988.74
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibrs ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero wbnoinvd arat umip rdpid overflow_recov succor
+Hypervisor vendor:               VMware
+Virtualization type:             full
+L1d cache:                       32 KiB (1 instance)
+L1i cache:                       32 KiB (1 instance)
+L2 cache:                        512 KiB (1 instance)
+L3 cache:                        4 MiB (1 instance)
+NUMA node(s):                    1
+NUMA node0 CPU(s):               0
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT disabled
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+[8mha:////4HAczoog+VNK3kwdv/qhkPBWRzlmBUjUqkuvtFMJKvDWAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] sh
+++ whoami
++ echo 'server Name:jenkins'
+server Name:jenkins
+[8mha:////4KYXepksbxoj4xAe8yOQLFWe6burOcwsvY7jdIfBNZ+CAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED9uwSoQvAAAAA==[0m[Pipeline] sh
+++ free -h
++ echo 'Memory:               total        used        free      shared  buff/cache   available
+Mem:           1.7Gi       1.5Gi       123Mi       5.0Mi       280Mi       233Mi
+Swap:          2.0Gi       1.2Gi       838Mi'
+Memory:               total        used        free      shared  buff/cache   available
+Mem:           1.7Gi       1.5Gi       123Mi       5.0Mi       280Mi       233Mi
+Swap:          2.0Gi       1.2Gi       838Mi
+[8mha:////4B/gLvNcQfE7lvM9P+Qjh/OcxwFoWOy25k2YpJ2Sn5DNAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMnSDbC/LdtvsAfEnCxL0AAAA=[0m[Pipeline] sh
+++ df
++ echo 'Disk Details:Filesystem          1K-blocks    Used Available Use% Mounted on
+devtmpfs                 4096       0      4096   0% /dev
+tmpfs                  894776    5328    889448   1% /dev/shm
+tmpfs                  357912   17488    340424   5% /run
+/dev/mapper/cs-root  28221440 6547792  21673648  24% /
+/dev/sda1              983040  380828    602212  39% /boot
+tmpfs                  178952     128    178824   1% /run/user/1000'
+Disk Details:Filesystem          1K-blocks    Used Available Use% Mounted on
+devtmpfs                 4096       0      4096   0% /dev
+tmpfs                  894776    5328    889448   1% /dev/shm
+tmpfs                  357912   17488    340424   5% /run
+/dev/mapper/cs-root  28221440 6547792  21673648  24% /
+/dev/sda1              983040  380828    602212  39% /boot
+tmpfs                  178952     128    178824   1% /run/user/1000
+[8mha:////4OXRmTI25I1nZ8XED8gU6TNUd1gD9BssPAFLN1GdGverAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMjY1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8AGWMrAb0AAAA=[0m[Pipeline] }
+[8mha:////4KCge02u/yExnrDJIgk9MHAr22Qw6mlqaotQhFzurE/XAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPc0iC370AAAA=[0m[Pipeline] // stage
+[8mha:////4N56kxlk4WNBcn9RSkB+biGeVay3nSV2P9TyHgUV6vR/AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRgg5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb3eCbP8BVVHllb0AAAA=[0m[Pipeline] }
+[8mha:////4JfGg7GgNUhJ3553DkbCBY7DZ1bLCHsSDVDQqmg7554BAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRgg5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb/eCbPcB5hihub0AAAA=[0m[Pipeline] // node
+[8mha:////4GRqTYrd82pRstVBd3CYZz1soG5KKhTrc3UYfS5cuzMbAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPwAHG870AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
