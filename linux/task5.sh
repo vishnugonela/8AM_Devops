@@ -7,6 +7,8 @@
 #
 #version:1
 #set -x # debug mode
+#
+#Note- Script need to run with root user
 
 
 PACKAGE="tomcat"
