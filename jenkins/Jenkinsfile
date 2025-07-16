@@ -6,6 +6,8 @@ pipeline {
             steps{
                 sh '''
                     echo "This is BUILD Stage"
+                    echo "Listing Workspace"
+                    ls ${WORKSPACE}
                 '''
             }
         }
