@@ -1,16 +1,17 @@
 pipeline {
     agent any
-    stages{
+    stages {
         stage('Show Master/Slave Details') {
-            steps{
-                sh '''
-// print master details
+            steps {
+                script {
                     def masterHost = Jenkins.instance.getRootUrl()
                     echo "Jenkins Master URL: ${masterHost}"
 
-// Print details about all agents (slaves)
-                    def nodes = jenkins.getNodes()
-                    echo "Agent Name: ${node.getNodeName()}"
+                    def nodes = Jenkins.instance.nodes
+                    nodes.each { node ->
+                        echo "Agent Name: ${node.getNodeName()}"
+                    }
+                }
             }
         }
     }
