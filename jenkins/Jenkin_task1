@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages{
+        stage('Show Master/Slave Details') {
+            steps{
+                sh '''
+// print master details
+                    def masterHost = Jenkins.instance.getRootUrl()
+                    echo "Jenkins Master URL: ${masterHost}"
+
+// Print details about all agents (slaves)
+                    def nodes = jenkins.getNodes()
+                    echo "Agent Name: ${node.getNodeName()}"
+            }
+        }
+    }
+}
