@@ -2,13 +2,36 @@ pipeline {
     agent any
 
     stages {
-        stage('Agent Info') {
+        stage('List Jenkins Nodes') {
             steps {
-                echo "Node name: ${env.NODE_NAME}"
-                echo "Workspace: ${env.WORKSPACE}"
-                echo "Executor number: ${env.EXECUTOR_NUMBER}"
-                echo "Computer name: ${env.COMPUTER_NAME ?: 'Unknown'}"
+                script {
+                    // Jenkins instance
+                    def jenkinsInstance = Jenkins.instance
+
+                    // Get all nodes (including master and agents)
+                    def nodes = jenkinsInstance.nodes
+
+                    // Print master details
+                    echo "Master Node:"
+                    def master = jenkinsInstance.getComputer("")
+                    echo "  Name: Master"
+                    echo "  Online: ${master.isOnline()}"
+                    echo "  Hostname: ${master.getHostName()}"
+                    echo "  Executors: ${master.countExecutors()}"
+
+                    // Print slave/agent details
+                    nodes.each { node ->
+                        def computer = node.toComputer()
+                        echo "Agent Node:"
+                        echo "  Name: ${node.name}"
+                        echo "  Online: ${computer.isOnline()}"
+                        echo "  Hostname: ${computer.getHostName()}"
+                        echo "  Executors: ${node.numExecutors}"
+                        echo "  Labels: ${node.getLabelString()}"
+                    }
+                }
             }
         }
     }
 }
+
