@@ -10,6 +10,10 @@ pipeline{
                      echo "server details"
 
                      echo "CPU details , `mpstat`"
+                     echo "Memory details, `free`"
+                     echo "servr name, `hostname`"
+                     echo "server uptime, `uptime`"
+                     
                 '''
             }
         }
