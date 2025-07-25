@@ -9,7 +9,7 @@ pipeline{
     
                      echo "server details"
 
-                     CPU details , `mpstat`
+                     echo "CPU details , `mpstat`"
                 '''
             }
         }
