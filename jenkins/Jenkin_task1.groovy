@@ -12,6 +12,7 @@ pipeline {
                     echo "IP Addresses:$ (ip a)" 
                     echo "Free Memory available:"
                     free -h
+                    CPU details, `mpstat`
                 '''
             }
         }
