@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        JENKINS_HOME_DIR = "/var/lib/jenkins"
+        JENKINS_HOME_DIR = "$HOME/lib/jenkins"
         BACKUP_BASE = "$HOME/backup/jenkins"
     }
 
