@@ -1,0 +1,61 @@
+#Verify/enable DEBUG option on each stage of pipeline job
+
+pipeline{
+agent any
+stages{
+
+stage('stage1-build'){
+steps{
+sh '''
+ set -x
+
+echo "this is build stage "
+
+whoami
+'''
+}
+}
+stage('stage2-test'){
+steps{
+sh'''
+set -x
+echo"this is test stage"
+date
+
+'''
+
+}
+}
+stage('stage3-deploy'){
+steps{
+sh'''
+set -x
+
+echo "this is deploy stage"
+
+pwd
+'''
+
+}
+
+
+}
+
+
+}
+
+
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+

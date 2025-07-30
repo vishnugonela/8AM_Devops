@@ -1,0 +1,79 @@
+pipeline{
+ agent any
+ stages{
+ stage("ignore error'){
+ steps{
+sh '''
+
+echo"ignoring error ."
+
+false||true
+'''
+
+}
+}
+
+stage('continue to run'){
+steps{
+
+echo"continue to run after facing error in prev stage"
+
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
