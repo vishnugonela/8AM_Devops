@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         JENKINS_HOME_DIR = "/var/lib/jenkins"
-        BACKUP_BASE = "/var/backup/jenkins"
+        BACKUP_BASE = "$HOME/backup/jenkins"
     }
 
     stages {
