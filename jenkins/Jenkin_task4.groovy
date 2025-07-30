@@ -15,6 +15,9 @@ pipeline {
                 echo "Invalid username. It must be UPPERCASE letters only with no spaces."
                   fi
                 }
+                        stage('Continue Pipeline') {
+            steps {
+                echo "Proceeding with further steps..."
             }
         }
     }
