@@ -5,7 +5,6 @@ stages {
  stage ('exception eror')
  steps{
 sh '''
-#!/bin/bash
 echo "step1:simulate task"
 
 sleep1
