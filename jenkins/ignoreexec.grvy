@@ -1,7 +1,15 @@
 pipeline{
  agent any
  stages{
- stage('ignore error'){
+ stage ('correct steps'){
+steps{
+echo"correct execution"
+sh '''
+pwd
+'''
+}
+}
+stage('ignore error'){
  steps{
 echo"ignoring error."
 sh '''
