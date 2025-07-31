@@ -3,9 +3,11 @@ pipeline{
  stages{
  stage('ignore error'){
  steps{
-echo"ignoring error ."
-
-false||true
+echo"ignoring error."
+script {
+    def result = false || true
+    echo "Groovy result is: ${result}"
+}
 
 }
 }
