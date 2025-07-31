@@ -4,6 +4,9 @@ pipeline{
  stage('ignore error'){
  steps{
 echo"ignoring error."
+sh '''
+sudo apt update 
+ apt install -y apache2
 script {
     def a = false || true
     echo "Groovy result is: ${a}"
@@ -15,7 +18,7 @@ script {
 stage('continue to run'){
 steps{
 echo"continue to run after facing error in prev stage"
-
+whoami
 
 
 }
