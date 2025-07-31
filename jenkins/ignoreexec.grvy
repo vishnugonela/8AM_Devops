@@ -1,21 +1,17 @@
 pipeline{
  agent any
  stages{
- stage("ignore error'){
+ stage('ignore error'){
  steps{
-
-
 echo"ignoring error ."
 
 false||true
-
 
 }
 }
 
 stage('continue to run'){
 steps{
-
 echo"continue to run after facing error in prev stage"
 
 
