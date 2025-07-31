@@ -3,6 +3,7 @@ pipeline{
 agent any
 stages {
  stage ('exception eror')
+{
  steps{
 sh '''
 echo "step1:simulate task"
@@ -22,7 +23,7 @@ echo"step 3:cannot run with above error"
 '''
 
 
-
+}
 
 }
 
