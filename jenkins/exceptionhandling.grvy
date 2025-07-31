@@ -7,7 +7,7 @@ stages{
 sh '''
 echo "step1:simulate task"
 
-sleep1
+sleep 1
 echo "step2  :execute with error"
 false
 
