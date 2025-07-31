@@ -1,12 +1,11 @@
 pipeline{
 agent none
  stages{
-
-sh '''
-        stage('Stage 1 - NODE1') {
+       stage('Stage 1 - NODE1') {
             agent { label 'NODE1' }
             steps {
-                echo "Running Stage 1 on NODE1"
+              
+             echo "Running Stage 1 on NODE1"
             }
         }
 
@@ -32,7 +31,7 @@ sh '''
             }
         }
 
-      '''
+      
 
 
 }
