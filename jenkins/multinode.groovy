@@ -5,9 +5,11 @@ agent none
        agent { label 'NODE1' }
             steps {
                            echo "Running Stage 1 on NODE1"
-             apt update
-             apt install apache2
-             service start apache2
+             sh '''
+                    sudo apt update
+                    sudo apt install -y apache2
+                    sudo systemctl start apache2
+                '''
             }
         }
 
