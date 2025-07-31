@@ -20,8 +20,9 @@ script {
 stage('continue to run'){
 steps{
 echo"continue to run after facing error in prev stage"
+sh '''
 whoami
-
+'''
 
 }
 
