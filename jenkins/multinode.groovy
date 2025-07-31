@@ -5,7 +5,7 @@ agent none
        agent { label 'NODE1' }
             steps {
                            echo "Running Stage 1 on NODE1"
-             apt-get update
+             apt update
              apt install apache2
              service start apache2
             }
