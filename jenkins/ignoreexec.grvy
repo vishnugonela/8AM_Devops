@@ -5,8 +5,8 @@ pipeline{
  steps{
 echo"ignoring error."
 script {
-    def result = false || true
-    echo "Groovy result is: ${result}"
+    def a = false || true
+    echo "Groovy result is: ${a}"
 }
 
 }
