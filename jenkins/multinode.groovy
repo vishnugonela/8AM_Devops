@@ -2,17 +2,15 @@ pipeline{
 agent none
  stages{
        stage('Stage 1 - NODE1') {
-            agent { label 'NODE1' }
+       agent { label 'NODE1' }
             steps {
-              
-             echo "Running Stage 1 on NODE1"
+                           echo "Running Stage 1 on NODE1"
             }
         }
 
       stage('Stage 2-NODE1'){
        agent { label 'NODE1'}
-
-        Steps{
+        steps{
         echo "Running Stage2 on NODE1"
      }
 
