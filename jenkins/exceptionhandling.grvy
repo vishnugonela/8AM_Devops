@@ -1,4 +1,4 @@
-#Write a pipeline script to execute exception error or error handling
+//Write a pipeline script to execute exception error or error handling
 pipeline{
 agent any
 stages {
