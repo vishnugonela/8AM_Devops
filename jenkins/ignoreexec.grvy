@@ -3,12 +3,12 @@ pipeline{
  stages{
  stage("ignore error'){
  steps{
-sh '''
+
 
 echo"ignoring error ."
 
 false||true
-'''
+
 
 }
 }
