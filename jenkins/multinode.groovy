@@ -1,5 +1,5 @@
 pipeline{
-agent any
+agent none
  stages{
 #First  stages on NODE1
 sh '''
@@ -19,13 +19,13 @@ sh '''
 
    }
     // Next 2 stages on NODE2
-        stage('Stage 6 - NODE2') {
+        stage('Stage 3 - NODE2') {
             agent { label 'NODE2' }
             steps {
                 echo "Running Stage 6 on NODE2"
             }
         }
-        stage('Stage 7 - NODE2') {
+        stage('Stage 4 - NODE2') {
             agent { label 'NODE2' }
             steps {
                 echo "Running Stage 7 on NODE2"
