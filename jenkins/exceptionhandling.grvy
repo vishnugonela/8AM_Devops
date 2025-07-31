@@ -1,9 +1,8 @@
 //Write a pipeline script to execute exception error or error handling
 pipeline{
 agent any
-stages {
- stage ('exception eror')
-{
+stages{
+ stage('exception eror'){
  steps{
 sh '''
 echo "step1:simulate task"
