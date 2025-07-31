@@ -1,7 +1,7 @@
 pipeline{
 agent none
  stages{
-#First  stages on NODE1
+
 sh '''
         stage('Stage 1 - NODE1') {
             agent { label 'NODE1' }
