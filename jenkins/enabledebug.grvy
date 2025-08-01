@@ -19,13 +19,14 @@ stage('stage2-test'){
 steps{
 sh '''
 #set -x
+echo "Todays date :$date"
 if [ "$DEBUG" = "true" ]; then
-echo "123"
+
                         set -x
 echo "234"
                     fi
 echo "this is test stage"
-Date
+#Date
 
 '''
 
