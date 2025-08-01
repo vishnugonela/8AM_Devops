@@ -17,7 +17,7 @@ echo "enter your username"
 if [ -z "$username" ];
 then 
 echo "error:username is empty.pl provide a valid username"
-//exit 1
+#exit 1
 
 else
 
