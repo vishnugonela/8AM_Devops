@@ -1,16 +1,22 @@
 //write a pipeline script to accept user input and validate
 
 pipeline{
-agent any
+agent any 
+
+parameters {
+        string(name: 'username', defaultValue: '', description: 'Enter your username')
+    }
+
+
 stages{
  stage("userinput validate"){
  steps{
- sh'''  
+ sh '''  
 echo "enter your username $username"
   
-if [ -z "$username"];
+if [ -z "$username" ];
 then 
-echo"error:username is empty.pl provide a valid username"
+echo "error:username is empty.pl provide a valid username"
 exit 1
 
 else
