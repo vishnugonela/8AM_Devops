@@ -3,9 +3,9 @@
 pipeline{
 agent any 
 
-parameters {
-        string(name: 'username', defaultValue: '', description: 'Enter your username')
-    }
+//parameters {
+  //      string(name: 'username', defaultValue: '', description: 'Enter your username')
+   // }
 
 
 stages{
