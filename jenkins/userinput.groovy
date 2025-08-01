@@ -1,6 +1,6 @@
 pipeline{
 agent any
-Stages{
+stages{
   stage(User input validation){
     steps{
       sh '''
