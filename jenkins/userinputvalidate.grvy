@@ -12,7 +12,7 @@ stages{
  stage("userinput validate"){
  steps{
  sh '''  
-echo "enter your username : $username"
+#echo "enter your username : $username"
   
 if [ -z "$username" ];
 then 
@@ -26,7 +26,7 @@ echo "username entered is $username "
 fi
 
 '''
-
+echo "enter your username : $username"
 }
 
 
