@@ -1,4 +1,4 @@
-#Write a pipeline script to accept user input and validate
+//write a pipeline script to accept user input and validate
 
 pipeline{
 agent any
