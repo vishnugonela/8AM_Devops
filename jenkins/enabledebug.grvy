@@ -1,4 +1,4 @@
-#Verify/enable DEBUG option on each stage of pipeline job
+//Verify/enable DEBUG option on each stage of pipeline job
 
 pipeline{
 agent any
