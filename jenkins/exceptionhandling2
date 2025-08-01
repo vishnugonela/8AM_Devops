@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run Task with Error Handling') {
+            steps {
+                sh '''
+                    echo "Step 1: Start task"
+                    sleep 1
+
+                    echo "Step 2: Simulate error"
+                    false  # This command fails
+
+                    if [ $? -ne 0 ]; then
+                        echo "Error detected in step 2"
+                        exit 1
+                    fi
+
+                    echo "Step 3: This won't run due to error"
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finished'
+        }
+        failure {
+            echo 'Pipeline failed due to an error'
+        }
+    }
+}
