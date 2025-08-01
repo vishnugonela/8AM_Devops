@@ -1,7 +1,7 @@
 pipeline{
 agent any
 stages{
-  stage(User input validation){
+  stage(user input validation){
     steps{
       sh '''
       if [ -z $username ];
