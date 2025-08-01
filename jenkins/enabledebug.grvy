@@ -17,9 +17,9 @@ whoami
 }
 stage('stage2-test'){
 steps{
-sh'''
+sh '''
 set -x
-echo"this is test stage"
+echo "this is test stage"
 date
 
 '''
@@ -28,7 +28,7 @@ date
 }
 stage('stage3-deploy'){
 steps{
-sh'''
+sh '''
 set -x
 
 echo "this is deploy stage"
