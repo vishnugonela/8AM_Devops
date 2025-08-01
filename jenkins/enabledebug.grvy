@@ -20,7 +20,9 @@ steps{
 sh '''
 #set -x
 if [ "$DEBUG" = "true" ]; then
+echo "123"
                         set -x
+echo "234"
                     fi
 echo "this is test stage"
 Date
