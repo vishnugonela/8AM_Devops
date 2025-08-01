@@ -7,7 +7,7 @@ stages{
 stage('stage1-build'){
 steps{
 sh '''
- set -x
+#set -x
 
 echo "this is build stage "
 
@@ -19,6 +19,9 @@ stage('stage2-test'){
 steps{
 sh '''
 #set -x
+if [ "$DEBUG" = "true" ]; then
+                        set -x
+                    fi
 echo "this is test stage"
 Date
 
