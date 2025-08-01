@@ -5,14 +5,12 @@ stages{
  stage('exception eror'){
  steps{
 sh '''
-echo "step1:simulate task"
-
+echo "step1: simulate task"
 sleep 1
-echo "step2  :execute with error"
+echo "step2:execute with error"
 false
 
-if [$? -ne 0];
-then 
+if [$? -ne 0];then 
 echo "error found"
 exit 1
 
