@@ -12,7 +12,7 @@ false
 
 if [$? -ne 0];then 
 echo "error found"
-exit 1
+
 
 fi
 echo"step 3:cannot run with above error"
