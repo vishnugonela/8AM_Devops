@@ -20,7 +20,7 @@ steps{
 sh '''
 set -x
 echo "this is test stage"
-date
+Date
 
 '''
 
