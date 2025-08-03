@@ -18,8 +18,12 @@ pipeline{
  apt install -y apache2
         '''
 
- 
-       false || true
+ script{
+   def a = false || true
+   echo "groovy result is :{$a}"
+
+ }
+   
      
        
         
