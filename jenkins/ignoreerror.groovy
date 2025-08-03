@@ -13,12 +13,14 @@ pipeline{
       steps{
         echo " ignoring error "
 
-         script{
-          def a = false || true
-          echo " groovy result is: ${a} "
-        sh '''
-     apt install apache2
+    sh '''
+   sudo apt update 
+ apt install -y apache2
         '''
+
+    script {
+      def a = false || true
+      echo "Groovy result is: ${a}"
        
         }
       }
