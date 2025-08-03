@@ -3,12 +3,11 @@ pipeline {
   stages {
     stage('Copy var from  prev job') {
       steps {
-       step([$class: 'CopyArtifact',
+       CopyArtifacts(
                     projectName: 'globalvar.groovy',
                     filter: 'filearch/credential.env',
-                    selector: [$class: 'LastSuccessfulBuildSelector']])
-        
-      }
+                    selector:'latestSuccessful')
+          }
     }
 
     stage('Use Variable') {
