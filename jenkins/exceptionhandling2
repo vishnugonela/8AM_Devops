@@ -8,6 +8,7 @@ catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh '''
                     echo "Step 1: Start task"
                     sleep 1
+                    pd
 
                     echo "Step 2: Simulate error"
                     #false  # This command fails
