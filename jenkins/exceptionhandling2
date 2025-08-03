@@ -10,7 +10,7 @@ catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     sleep 1
 
                     echo "Step 2: Simulate error"
-                    false  # This command fails
+                    #false  # This command fails
 
                     if [ $? -ne 0 ]; then
                         echo "Error detected in step 2"
