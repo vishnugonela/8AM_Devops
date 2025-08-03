@@ -9,7 +9,7 @@ pipeline {
                     filter: 'filearch/credential.env',
                     selector: [$class: 'LastSuccessfulBuildSelector']
                 ]
-        )
+        
       }
     }
 
