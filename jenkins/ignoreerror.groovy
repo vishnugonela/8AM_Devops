@@ -13,7 +13,7 @@ pipeline{
       steps{
         echo " ignoring error "
         sh '''
-        sudo update apache2
+     pwd
         '''
         script{
           def a = false || true
