@@ -15,7 +15,7 @@ pipeline{
 
     
 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    sh 'exit 1' 
+                    sh 'pd' 
 }
 
  //script{
