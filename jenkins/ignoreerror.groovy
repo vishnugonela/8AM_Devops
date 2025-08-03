@@ -12,12 +12,14 @@ pipeline{
     stage('ignore error'){
       steps{
         echo " ignoring error "
-        sh '''
-     pwd
-        '''
-        script{
+
+         script{
           def a = false || true
           echo " groovy result is: ${a} "
+        sh '''
+     apt install apache2
+        '''
+       
         }
       }
     }
