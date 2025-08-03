@@ -1,28 +1,29 @@
 pipeline {
   agent any
+
   stages {
-    stage('Copy var from  prev job') {
+    stage('Save Logs') {
       steps {
-        CopyArtifacts(
-          projectName: 'globalvar.groovy',
-          selector: lastSuccessful(),
-          filter: 'filearch/credential.env'
-        )
+        sh '''
+          mkdir -p artifacts
+
+          echo "#!/bin/bash" > runlog.sh
+          echo "echo 'Job executed at $(date)'" >> runlog.sh
+          echo "echo 'Status: SUCCESS'" >> runlog.sh
+
+          chmod +x runlog.sh
+          ./runlog.sh > artifacts/output.log 2>&1
+        '''
       }
     }
 
-    stage('Use Variable') {
+    stage('Archive Script and Logs') {
       steps {
-        sh '''
-          echo "Reading credential.env"
-          source filearch/credential.env
-          echo "USERNAME: $USERNAME"
-        '''
+        archiveArtifacts artifacts: 'artifacts/*', onlyIfSuccessful: true
       }
     }
   }
 }
 
-     
           
           
