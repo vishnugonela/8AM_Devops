@@ -12,7 +12,7 @@ pipeline {
           echo "echo 'Status: SUCCESS'" >> runlog.sh
 
           chmod +x runlog.sh
-          ./runlog.sh > artifacts/output.log 2>&1
+          ./runlog.sh > artifacts/output.log 
         '''
       }
     }
