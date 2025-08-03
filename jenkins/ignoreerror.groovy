@@ -13,16 +13,16 @@ pipeline{
       steps{
         echo " ignoring error "
 
-    sh '''
-   sudo apt update 
- apt install -y apache2
-        '''
+    
+catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh 'exit 1' 
+}
 
- script{
-   def a = false || true
-   echo "groovy result is :{$a}"
+ //script{
+  // def a = false || true
+  // echo "groovy result is :{$a}"
 
- }
+// }
    
      
        
