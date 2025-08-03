@@ -17,7 +17,7 @@ pipeline{
         '''
         script{
           def a = false || true
-          echo " groovy result is: ${a}
+          echo " groovy result is: ${a} "
         }
       }
     }
