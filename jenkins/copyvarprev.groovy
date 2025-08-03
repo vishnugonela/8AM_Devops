@@ -6,7 +6,7 @@ pipeline {
        copyArtifacts(
                     projectName: 'globalvar',
                     filter: 'filearch/credential.env',
-                    selector: [$class: 'StatusBuildSelector', stable: false]
+                    selector: [$class: 'StatusBuildSelector', stable: false])
           }
     }
 
