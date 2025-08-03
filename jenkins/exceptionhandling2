@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Run Task with Error Handling') {
             steps {
+catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh '''
                     echo "Step 1: Start task"
                     sleep 1
@@ -19,6 +20,7 @@ pipeline {
                     echo "Step 3: This won't run due to error"
                 '''
             }
+}
         }
     }
 
