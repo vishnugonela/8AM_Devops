@@ -9,7 +9,7 @@ stages{
       echo "error:entered user name is empty, please provide a valid useranme."
 
       else 
-      echo "Entered user name is : "
+      echo "Entered user name is : $username"
 
       fi
       #we need to add the parameter in jenikins
