@@ -1,3 +1,4 @@
+//copy artifact from this job
 pipeline {
   agent any
 
