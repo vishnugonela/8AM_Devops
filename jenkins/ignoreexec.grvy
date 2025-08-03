@@ -14,12 +14,12 @@ stage('ignore error'){
 echo"ignoring error."
 //sh '''
     
-catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
+catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 sh '''
 sudo apt update 
  apt install -y apache2
 '''
-
+}
 //script {
     //def a = false || true
    // echo "Groovy result is: ${a}"
