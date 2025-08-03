@@ -4,9 +4,9 @@ pipeline {
     stage('Copy var from  prev job') {
       steps {
        copyArtifacts(
-                    projectName: 'globalvar.groovy',
+                    projectName: 'globalvar',
                     filter: 'filearch/credential.env',
-                    selector:'latestSuccessful')
+                    selector: [$class: 'StatusBuildSelector', stable: false]
           }
     }
 
