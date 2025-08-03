@@ -7,6 +7,20 @@ pipeline{
         copyArtifacts(
           ProjectName:globalvar.groovy,
           selector: lastSuccessful(),
-          filter:filechar
+          filter: 'filechar/credential.env'
+          )
+         }
+    }
+        stage('Use Variable') {
+            steps {
+                sh '''
+                    source filechar/credential.env
+                    echo "API_KEY: $API_KEY"
+                '''
+            }
+        }
+      }
+    }
+     
           
           
