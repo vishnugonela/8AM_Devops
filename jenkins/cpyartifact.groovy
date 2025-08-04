@@ -5,7 +5,7 @@ pipeline {
     stage('Copy Artifacts from script-logger-job') {
       steps {
         copyArtifacts(
-          projectName: 'globalvar.groovy',
+          projectName: 'Save logs',
           selector: [$class: 'LastSuccessfulBuildSelector'],
           filter: 'artifacts/*',
           target: 'imported'
