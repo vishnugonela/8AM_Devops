@@ -1,0 +1,10 @@
+#base image
+FROM nginx:alpine
+
+#remove the nginx welcome page and add my custom
+RUN rm -rf /usr/share/nginx/html/*
+
+#my custom index.html content
+RUN echo 'hello docker from Vishu(TASK1)' > /usr/share/nginx/html/index.html
+
+#exposing port 80
